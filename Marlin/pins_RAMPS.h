@@ -88,39 +88,39 @@
 //
 // Steppers
 //
-#define X_STEP_PIN         54
-#define X_DIR_PIN          55
-#define X_ENABLE_PIN       38
+#define X_STEP_PIN         54  // confirmado
+#define X_DIR_PIN          55  // confirmado
+#define X_ENABLE_PIN       38  // A VCC directamente
 #ifndef X_CS_PIN
-  #define X_CS_PIN         53
+  #define X_CS_PIN         53  // Sin confirmar
 #endif
 
-#define Y_STEP_PIN         60
-#define Y_DIR_PIN          61
-#define Y_ENABLE_PIN       56
+#define Y_STEP_PIN         60  // confirmado
+#define Y_DIR_PIN          61  // confirmado
+#define Y_ENABLE_PIN       56  // A VCC directamente
 #ifndef Y_CS_PIN
-  #define Y_CS_PIN         49
+  #define Y_CS_PIN         49  // Sin confirmar
 #endif
 
-#define Z_STEP_PIN         46
-#define Z_DIR_PIN          48
-#define Z_ENABLE_PIN       62
+#define Z_STEP_PIN         46  // confirmado
+#define Z_DIR_PIN          48  // confirmado
+#define Z_ENABLE_PIN       62  // A VCC directamente
 #ifndef Z_CS_PIN
-  #define Z_CS_PIN         40
+  #define Z_CS_PIN         40  // Sin confirmar
 #endif
 
-#define E0_STEP_PIN        26
-#define E0_DIR_PIN         28
-#define E0_ENABLE_PIN      24
+#define E0_STEP_PIN        26  // confirmado
+#define E0_DIR_PIN         28  // confirmado
+#define E0_ENABLE_PIN      24  // A VCC directamente
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN        42
+  #define E0_CS_PIN        42  // Sin confirmar
 #endif
 
-#define E1_STEP_PIN        36
-#define E1_DIR_PIN         34
-#define E1_ENABLE_PIN      30
+#define E1_STEP_PIN        36  // OK
+#define E1_DIR_PIN         34  // OK
+#define E1_ENABLE_PIN      30  // A VCC directamente
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN        44
+  #define E1_CS_PIN        44  // Sin confirmar
 #endif
 
 /**
@@ -229,7 +229,7 @@
   #define RAMPS_D8_PIN      8
 #endif
 #ifndef RAMPS_D9_PIN
-  #define RAMPS_D9_PIN      9
+  #define RAMPS_D9_PIN      4
 #endif
 #ifndef RAMPS_D10_PIN
   #define RAMPS_D10_PIN    10
@@ -335,9 +335,9 @@
   //
   #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-    #define LCD_PINS_RS         49   // CS chip select /SS chip slave select
-    #define LCD_PINS_ENABLE     51   // SID (MOSI)
-    #define LCD_PINS_D4         52   // SCK (CLK) clock
+    #define LCD_PINS_RS         19   // CS chip select /SS chip slave select
+    #define LCD_PINS_ENABLE     20   // SID (MOSI)
+    #define LCD_PINS_D4         21   // SCK (CLK) clock
 
   #elif ENABLED(NEWPANEL) && ENABLED(PANEL_ONE)
 
@@ -433,10 +433,10 @@
 
     #elif ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-      #define BTN_EN1           64
-      #define BTN_EN2           59
-      #define BTN_ENC           63
-      #define SD_DETECT_PIN     42
+      #define BTN_EN1           31
+      #define BTN_EN2           33
+      #define BTN_ENC           35
+      #define SD_DETECT_PIN     49
 
     #elif ENABLED(LCD_I2C_PANELOLU2)
 
